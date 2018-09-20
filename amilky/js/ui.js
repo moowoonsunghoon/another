@@ -37,6 +37,7 @@ $(document).ready(function() {
       var hours = 0;
       var minutes = 0;
       var seconds = 0;
+      var st = 0;
       var timer;
       $(".timer").html("<ul class='time'> <li>" + zeroplus(hours, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(minutes, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(seconds, 2) + "</li> </ul>");
       $(".timestart").click(function() {
@@ -63,12 +64,14 @@ $(document).ready(function() {
       })
 
       $(".recordbtn").click(function() {
-        $(".record").append("<ul class='time'><li>" + zeroplus(hours, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(minutes, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(seconds, 2) + "</li>" + "</ul>");
+        st++;
+        $(".record").append("<ul class='time'><h2>랩"+st+"</h2><li>" + zeroplus(hours, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(minutes, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(seconds, 2) + "</li>" + "</ul>")
      })
      $(".resetbtn").click(function() {
        hours = 0;
        minutes = 0;
        seconds = 0;
+       st = 0;
        $(".timer").html("<ul class='time'> <li>" + zeroplus(hours, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(minutes, 2) + "</li>" + "<span>:</span>" + "<li>" + zeroplus(seconds, 2) + "</li> </ul>");
        $(".record").empty();
      })
