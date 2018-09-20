@@ -160,6 +160,10 @@ font-size: 15px;
   margin: 30px 0;
   font-size: 15px;
 }
+
+.material li p{
+  margin-top: 10px;
+}
 .syrupori, .syrupsuf, .syrupsho, .syruplub {
   float: left;
   width: 50%;
