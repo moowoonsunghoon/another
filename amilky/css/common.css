@@ -16,7 +16,6 @@ shadow : 0 1px 5px rgba(104, 104, 104, 0.8)
 
 body {
   background-color: #ccc;
-  margin: 30px 50px;
 }
 
 a {
@@ -95,7 +94,7 @@ button {
   background-color: #ddd;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   margin-right: 6px;
-  margin-left: 9px;
+  margin-left: 8px;
   font-size: 15px;
     padding: 10px 10px;
 }
@@ -214,4 +213,28 @@ font-size: 15px;
 
 .buttondiv {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #wrap {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+  }
+  .form {
+    float: left;
+    width: 15%;
+    height: 400px;
+    background-color: #ddd;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    margin-right: 5px;
+    margin-left: 18px;
+    font-size: 15px;
+      padding: 10px 10px;
+  }
+  #made, #material{
+    margin-left: 20px;
+    margin-right: 15px;
+  }
 }
