@@ -238,7 +238,11 @@ font-size: 15px;
       padding: 10px 10px;
   }
   #made, #material{
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 15px;
+  }
+
+  #syrup {
+    margin-left: 15px;
   }
 }
