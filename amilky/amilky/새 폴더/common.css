@@ -1,0 +1,149 @@
+/*
+#ddd
+#333
+#fff
+shadow : 0 1px 5px rgba(104, 104, 104, 0.8)
+*/
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+button{
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border: 0;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+#wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top{
+  background-color: #e3b8f0;
+}
+
+.top h1{
+  display: inline;
+  float: left;
+  color: white;
+  margin-left: 15px;
+}
+
+.menu{
+  position: relative;
+}
+
+.menu ul{
+  position: absolute;
+  right: 5%;
+  top : 20%;
+}
+.menu li{
+  float: left;
+  margin-right: 15px;
+}
+
+.menu li a{
+  color: white;
+}
+
+.menu::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.form {
+  float: left;
+  width: 30%;
+  height: 384px;
+
+}
+
+.result {
+  float: right;
+  width: 70%;
+}
+
+.result::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#made, #material, #syrup {
+  float: left;
+  width: 33.333%;
+}
+
+.made, .material, .syrup {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 350px;
+}
+
+.ori, .suf, .sho, .lub, .set {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.results {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.timer::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*타이머*/
+
+.time {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.time li {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  font-size: 100px;
+}
+
+.time span {
+  font-size: 100px;
+}
+
+.timestart, .timestop, .recordbtn {
+  position: relative;
+  top: 50%;
+}
+
+.buttondiv {
+  text-align: center;
+}

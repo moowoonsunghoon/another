@@ -1,0 +1,240 @@
+/*
+#ddd
+#333
+#fff
+shadow : 0 1px 5px rgba(104, 104, 104, 0.8)
+*/
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  border: 0;
+}
+
+#wrap {
+  width: 768px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+.top {
+  background-color: #e3b8f0;
+}
+
+.top h1 {
+  display: inline;
+  float: left;
+  color: white;
+  margin-left: 15px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu ul {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+
+.menu li {
+  float: left;
+  margin-right: 15px;
+}
+
+.menu li a {
+  color: white;
+}
+
+.menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.form {
+  float: left;
+  width: 15%;
+  height: 400px;
+  background-color: #ddd;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  margin-right: 6px;
+  margin-left: 8px;
+  font-size: 15px;
+    padding: 10px 10px;
+}
+
+.form h2{
+  margin-bottom: 10px;
+}
+.ori, .suf, .sho, .lub, .set {
+  display: block;
+  width: 90%;
+  height: 30px;
+  margin: 8px auto;
+  text-align: center;
+  font-size: 15px;
+
+
+}
+
+.result {
+  float: right;
+  width: 83%;
+}
+
+.result::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#made, #material, #syrup {
+  float: left;
+  width: 30%;
+  font-size: 1.1rem;
+  background-color: #ddd;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  text-align: center;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 10px;
+}
+
+#syrup {
+  margin-right: 0;
+}
+
+.made {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ .material{
+   width: 50%;
+   float: left;
+ }
+
+.made li{
+margin: 25px 0;
+font-size: 15px;
+}
+
+.material li{
+  margin: 30px 0;
+  font-size: 15px;
+}
+.syrupori, .syrupsuf, .syrupsho, .syruplub {
+  float: left;
+  width: 50%;
+  margin: 15px 0;
+  text-align: center;
+  line-height: 1.1rem;
+}
+
+.syrupori li, .syrupsuf li, .syrupsho li, .syruplub li {
+  line-height: 20px;
+  font-size: 15px;
+}
+
+
+
+.results {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.timer::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*타이머*/
+
+.time {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.time li {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  font-size: 100px;
+}
+
+.time span {
+  font-size: 100px;
+}
+
+.timestart, .timestop, .recordbtn {
+  position: relative;
+  top: 50%;
+}
+
+.buttondiv {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #wrap {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+  }
+  .form {
+    float: left;
+    width: 15%;
+    height: 400px;
+    background-color: #ddd;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    margin-right: 5px;
+    margin-left: 18px;
+    font-size: 15px;
+      padding: 10px 10px;
+  }
+  #made, #material{
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+}
