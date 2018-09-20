@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+    var timer ;
+  $(function(){
+    $(".timer").html("<ul class=time> <li>"+zeroplus(hours, 2)+"</li>"+"<span>:</span>"+"<li>"+zeroplus(minutes, 2)+"</li>"+"<span>:</span>"+"<li>"+zeroplus(seconds, 2)+"</li> </ul>");
+
+    $(".timestart").click(function(){
+      timer = setInterval(function(){
+        seconds ++;
+        if (seconds == 60) {
+          minutes++;
+          seconds = 0;
+        }
+        if (minutes == 60) {
+          hours ++;
+          minutes = 0;
+        }
+        $(".timer").html("<ul class=time> <li>"+zeroplus(hours, 2)+"</li>"+"<span>:</span>"+"<li>"+zeroplus(minutes, 2)+"</li>"+"<span>:</span>"+"<li>"+zeroplus(seconds, 2)+"</li> </ul>");
+      },1000)
+      $(".timestart").css("display","none")
+      $(".timestop").css("display","inline");
+    })
+
+  $(".timestop").click(function(){
+    clearInterval(timer);
+    $(".timestop").css("display","none")
+    $(".timestart").css("display","inline");
+  })
+
+  $(".recordbtn").click(function(){
+    $(".record").append("<ul class=time><li>"+zeroplus(hours, 2)+"</li>"+"<span>:</span>"+"<li>"+zeroplus(minutes, 2)+"</li>"+"<span>:</span>"+"<li>"+zeroplus(seconds, 2)+"</li>"+"</ul>");
+  })
+})
+
+function zeroplus(n, z) {
+  var zero = '';
+  n = n.toString();
+  if (n.length < z) {
+    for (var i = 0; i < z - n.length; i++) {
+      zero += '0';
+    }
+  }
+  return zero + n;
+}
+    </script>
+    <style media="screen">
+    ul{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+      li{
+        display: inline-block;
+        text-align: center;
+        width: 150px;
+        font-size: 100px;
+      }
+      span{
+        font-size: 100px;
+      }
+      button{
+        position: relative;
+        top : 50%;
+      }
+      .buttondiv{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer">
+
+   </div>
+
+   <div class="buttondiv">
+<button type="button" class="timestart" name="button" >시작</button>
+<button type="button" class=" timestop" name="button"  style="display: none;">정지</button>
+<button type="button" class= "recordbtn" name="button">기록</button>
+</div>
+<div class="record">
+</div>
+  </body>
+</html>
