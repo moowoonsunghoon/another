@@ -141,6 +141,10 @@ button {
   margin-right: 0;
 }
 
+#syrup h2{
+  margin-bottom: 10px;
+}
+
 .made {
   width: 80%;
   margin: 0 auto;
@@ -167,9 +171,9 @@ font-size: 15px;
 .syrupori, .syrupsuf, .syrupsho, .syruplub {
   float: left;
   width: 50%;
-  margin: 15px 0;
   text-align: center;
   line-height: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .syrupori li, .syrupsuf li, .syrupsho li, .syruplub li {
@@ -177,7 +181,9 @@ font-size: 15px;
   font-size: 15px;
 }
 
-
+.syrupori p, .syrupsuf p, .syrupsho p, .syruplub p{
+  margin: 5px 0;
+}
 
 .results {
   display: block;
