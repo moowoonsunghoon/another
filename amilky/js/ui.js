@@ -177,7 +177,7 @@ function sterbtn() {
       $(".countdown p").text(zeroplus(h, 2) + " : " + zeroplus(m, 2) + " : " + zeroplus(s, 2));
       if (h == 0 && m == 0 && s == 0) {
         clearInterval(timers);
-        var audio = new Audio('C:/Users/msh13/OneDrive/바탕 화면/amilky/js/bell.mp3');
+        var audio = new Audio('js/bell.mp3');
         audio.play();
         $(function(){
           $(".ster").fadeIn();
