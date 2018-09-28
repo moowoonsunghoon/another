@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>제조량계산</title>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/ui.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="top">
+        <h1>Amilky Quality Control 품질관리</h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="icecream.html">아이스크림</a></li>
+            <li><a href="milk.html">밀크</a></li>
+            <li><a href="#stertimer">살균시간 계산</a></li>
+            <li><a href="#madetimer">타이머</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="content">
+      <div id="formresult">
+        <div class="form">
+          <h2>제조량 입력</h2>
+          <form class="" action="index.html" method="post">
+            <label for="ori">오리지널</label>
+            <input type="text" class="input ori" name="ori" placeholder="제조량 입력">
+            <label for="suf">슈가프리</label>
+            <input type="text" class="input suf" name="suf" placeholder="제조량 입력">
+            <label for="sho">쇼콜라</label>
+            <input type="text" class="input sho" name="sho" placeholder="제조량 입력">
+            <label for="lub">루이보스</label>
+            <input type="text" class="input lub" name="lub" placeholder="제조량 입력">
+            <label for="set">4세트</label>
+            <input type="text" class="input set" name="set" placeholder="제조량 입력">
+          </form>
+        </div>
+        <div class="result">
+          <div id="made">
+            <h2>제조량</h2>
+            <ul class='made'>
+              <li>오리지널 제조량
+                <p>0 병 / 0 L</p>
+              </li>
+              <li>
+                슈가프리 제조량
+                <p>0 병 / 0 L</p>
+              </li>
+              <li>
+                쇼콜라 제조량
+                <p>0 병 / 0 L</p>
+              </li>
+              <li>
+                루이보스 제조량
+                <p>0 병 / 0 L</p>
+              </li>
+              <li>
+                총제조량
+                <p>0 병 / 0 L</p>
+              </li>
+            </ul>
+          </div>
+          <div id="material">
+            <h2>재료</h2>
+            <ul class='material'>
+              <li>
+                아몬드
+                <p>0 g</p>
+              </li>
+              <li>
+                캐슈넛
+                <p>0 g</p>
+              </li>
+              <li>
+                젤란
+                <p>0 g</p>
+              </li>
+              <li>
+                로커스트
+                <p>0 g</p>
+              </li>
+            </ul>
+            <ul class='material'>
+              <li>
+                소금
+                <p>0 g</p>
+              </li>
+              <li>
+                레시틴
+                <p>0 g</p>
+              </li>
+              <li>
+                칼륨
+                <p>0 g</p>
+              </li>
+            </ul>
+          </div>
+          <div id="syrup">
+            <h2>시럽</h2>
+            <ul class='syrup'>
+              <li>
+                <h4>오리지널</h4>
+              </li>
+              <li> 물
+                <p>0 g</p>
+              </li>
+              <li>설탕
+                <p>0 g</p>
+              </li>
+              <li> 바닐라빈
+                <p>0 ea</p>
+              </li>
+            </ul>
+            <ul class='syrup'>
+              <li>
+                <h4>슈가프리</h4>
+              </li>
+              <li> 물
+                <p>0 g</p>
+              </li>
+              <li>에리스리톨
+                <p>0 g</p>
+              </li>
+              <li>바닐라빈
+                <p>0 ea</p>
+              </li>
+            </ul>
+            <ul class='syrup'>
+              <li>
+                <h4>쇼콜라</h4>
+              </li>
+              <li>물
+                <p>0 g</p>
+              </li>
+              <li>설탕
+                <p>0 g</p>
+              </li>
+              <li>카카오분
+                <p>0 g</p>
+              </li>
+            </ul>
+            <ul class='syrup'>
+              <li>
+                <h4>루이보스</h4>
+              </li>
+              <li>물
+                <p>0 g</p>
+              </li>
+              <li>설탕
+                <p>0 g</p>
+              </li>
+              <li>루이보스잎
+                <p>0 g</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="stertimer">
+        <h3>< 살균타이머 ></h3>
+        <div class="temper">
+          <label for="tem">온도(℃)<input type="text" class="tem" name="temper" placeholder="온도 입력"></label>
+          <label for="hum">습도(%)<input type="text" class="hum" name="humid" placeholder="습도 입력"></label>
+          <p class="stertime">살균시간 00분 입니다.</p>
+        </div>
+        <div class="counttimer">
+          <div class="countdown">
+            <p>00 : 00 : 00</p>
+          </div>
+          <div class="sterbtn">
+            <button type="button" class="ster" name="button">살균 시작</button>
+            <button type="button" class="sterstop" name="button" style="display:none;">살균 정지</button>
+            <button type="button" class="sterreset" name="button">리셋</button>
+          </div>
+        </div>
+      </div>
+      <div id="madetimer">
+        <h3>< 가공타이머 ></h3>
+        <div class="stopwatch">
+          <div class="timer">
+            <p>00 : 00 : 00</p>
+          </div>
+          <div class="buttondiv">
+            <button type="button" class="timestart" name="button">시작</button>
+            <button type="button" class="timestop" name="button" style="display: none;">정지</button>
+            <button type="button" class="recordbtn" name="button">기록</button>
+            <button type="button" class="resetbtn" name="button">리셋</button>
+          </div>
+        </div>
+        <div class="record"></div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
