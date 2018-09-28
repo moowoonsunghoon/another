@@ -147,9 +147,9 @@ $(document).ready(function() {
     tem = Number($(".tem").val());
     hum = Number($(".hum").val());
     var total = (tem * hum)*7.2
-    s = total % 60;
-    m = Math.floor((total / 60) % 60)
-    h = Math.floor(total / 60 / 60)
+    s = Math.floor(total % 60);
+    m = Math.floor((total / 60) % 60);
+    h = Math.floor(total / 60 / 60);
     $(".stertime").text("살균시간 " + zeroplus(Math.floor(total / 60),2) + "분 입니다.")
     $(".countdown p").text(zeroplus(h, 2) + " : " + zeroplus(m, 2) + " : " + zeroplus(s, 2));
   });
