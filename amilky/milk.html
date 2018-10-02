@@ -18,8 +18,8 @@
         <h1>Amilky Quality Control 품질관리</h1>
         <nav class="menu">
           <ul>
-            <li><a href="icecream.html">아이스크림</a></li>
-            <li><a href="milk.html">밀크</a></li>
+            <li class="gnb1"><a href="milk.html">밀크</a></li>
+            <li class="gnb2"><a href="icecream.html">아이스크림</a></li>
             <li><a href="#stertimer">살균시간 계산</a></li>
             <li><a href="#madetimer">타이머</a></li>
           </ul>
@@ -39,6 +39,8 @@
             <input type="text" class="input sho" name="sho" placeholder="제조량 입력">
             <label for="lub">루이보스</label>
             <input type="text" class="input lub" name="lub" placeholder="제조량 입력">
+            <label for="lat">라떼</label>
+            <input type="text" class="input lat" name="lat" placeholder="제조량 입력">
             <label for="set">4세트</label>
             <input type="text" class="input set" name="set" placeholder="제조량 입력">
           </form>
@@ -60,6 +62,10 @@
               </li>
               <li>
                 루이보스 제조량
+                <p>0 병 / 0 L</p>
+              </li>
+              <li>
+                라떼 제조량
                 <p>0 병 / 0 L</p>
               </li>
               <li>
@@ -105,10 +111,8 @@
           </div>
           <div id="syrup">
             <h2>시럽</h2>
+            <h4>오리지널</h4>
             <ul class='syrup'>
-              <li>
-                <h4>오리지널</h4>
-              </li>
               <li> 물
                 <p>0 g</p>
               </li>
@@ -119,10 +123,8 @@
                 <p>0 ea</p>
               </li>
             </ul>
+            <h4>슈가프리</h4>
             <ul class='syrup'>
-              <li>
-                <h4>슈가프리</h4>
-              </li>
               <li> 물
                 <p>0 g</p>
               </li>
@@ -133,10 +135,8 @@
                 <p>0 ea</p>
               </li>
             </ul>
+            <h4>쇼콜라</h4>
             <ul class='syrup'>
-              <li>
-                <h4>쇼콜라</h4>
-              </li>
               <li>물
                 <p>0 g</p>
               </li>
@@ -147,10 +147,8 @@
                 <p>0 g</p>
               </li>
             </ul>
+            <h4>루이보스</h4>
             <ul class='syrup'>
-              <li>
-                <h4>루이보스</h4>
-              </li>
               <li>물
                 <p>0 g</p>
               </li>
@@ -158,6 +156,17 @@
                 <p>0 g</p>
               </li>
               <li>루이보스잎
+                <p>0 g</p>
+              </li>
+            </ul>
+            <h4>라떼</h4>
+            <ul class='syrup'>
+              <li>
+                커피원액
+                <p>0 g</p>
+              </li>
+              <li>
+                설탕
                 <p>0 g</p>
               </li>
             </ul>
