@@ -101,7 +101,7 @@ button {
 .form {
   float: left;
   width: 15%;
-  height: 400px;
+  height: 500px;
   background-color: #ddd;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   margin-right: 6px;
@@ -114,11 +114,11 @@ button {
   margin-bottom: 10px;
 }
 
-.ori, .suf, .sho, .lub, .set {
+.ori, .suf, .sho, .lub, .lat, .set {
   display: block;
   width: 90%;
   height: 30px;
-  margin: 8px auto;
+  margin: 10px auto;
   text-align: center;
   font-size: 15px;
 }
@@ -141,7 +141,7 @@ button {
   background-color: #ddd;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   text-align: center;
-  height: 400px;
+  height: 500px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px 10px;
@@ -166,12 +166,12 @@ button {
 }
 
 .made li {
-  margin: 25px 0;
+  margin: 30px 0;
   font-size: 15px;
 }
 
 .material li {
-  margin: 30px 0;
+  margin: 50px 0;
   font-size: 15px;
 }
 
@@ -181,21 +181,29 @@ button {
 
 .syrup {
   float: left;
-  width: 50%;
+  width: 100%;
   text-align: center;
-  line-height: 1.1rem;
-  margin-bottom: 10px;
+
 }
 
 .syrup li {
-  line-height: 20px;
+  margin-bottom: 15px;
   font-size: 15px;
+  float: left;
+  width: 33%;
 }
 
 .syrup p {
   margin: 5px 0;
 }
 
+#syrup h4{
+  font-size: 14px;
+  margin: 13px 0 8px 0;
+  padding-left: 15px;
+  text-align: left;
+  clear:both;
+}
 
 /*타이머*/
 
@@ -348,7 +356,7 @@ button {
   .form {
     float: left;
     width: 15%;
-    height: 400px;
+    height: 500px;
     background-color: #ddd;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     margin-right: 5px;
